@@ -2,6 +2,7 @@
   height: 100vh;
   width: 100%;
   display: flex;
+  position: relative;
 }
 .main-bg {
   background: url('../images/main-bg.jpg');
@@ -11,5 +12,19 @@
   width: 80%;
 }
 .left-c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 20%;
 }
+
+.itemMenu {
+  font-size: 30px;
+  padding: 10px;
+}
+
+// .logoMain {
+
+
+// }
