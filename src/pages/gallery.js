@@ -1,6 +1,19 @@
 import React from 'react'
 
-const Gallery = ( ) => {
-return <div>I'm a gallery</div>
+// import MENULIST from '../components/menu-list'
+import MenuList from '../components/MenuList'
+import Logo from '../components/Logo'
+
+class Gallery extends React.Component {
+
+  render() {
+    const menuList = ['gallery','aboutme', 'contact']
+    return (
+      <div>
+        <Logo />
+        <MenuList menuList={menuList} />
+      </div>
+      )
+  }
 }
 export default Gallery

@@ -2,7 +2,7 @@ import React from "react"
 
 // import NameLogo from '../components/NameLogo'
 import MenuList from '../components/MenuList'
-import "../styles/main.scss"
+import '../styles/main.scss'
 import Logo from "../components/Logo"
 
 class HomePage extends React.Component {
