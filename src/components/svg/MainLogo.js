@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const Logo = () => {
+const MainLogo = () => {
   const logoMain = {
     position: "absolute",
     top: "50px",
@@ -32,4 +32,4 @@ const Logo = () => {
   );
 }
 
-export default Logo;
+export default MainLogo;

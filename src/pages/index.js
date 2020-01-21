@@ -3,7 +3,7 @@ import React from "react"
 // import NameLogo from '../components/NameLogo'
 import MenuList from '../components/MenuList'
 import "../styles/main.scss"
-import Logo from "../components/svg/Logo"
+import Logo from "../components/Logo"
 
 class HomePage extends React.Component {
 
@@ -11,15 +11,19 @@ class HomePage extends React.Component {
   super(props)
 
   this.state = {
-      menuList: ['gallery','about me', 'contact']
+      menuList: ['gallery','aboutme', 'contact']
     }
   }
 
+ static defaultProps = {
+      hasMainPageFeature: true,
+    }
   render() {
 
    const { menuList } = this.state
+   const { hasMainPageFeature } = this.props
   return ( <div className="main-container">
-      <Logo />
+      <Logo isMainPage={hasMainPageFeature} />
       <div className="left-c">
         <MenuList menuList={menuList}/>
       </div>
