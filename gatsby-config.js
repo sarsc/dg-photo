@@ -11,11 +11,27 @@ require('dotenv').config({
 module.exports = {
   /* Your site config here */
   plugins: [
-  {
-    resolve: "gatsby-plugin-sass",
-    options: {
-      useResolveUrlLoader: true,
+    {
+      resolve: "gatsby-plugin-sass",
+      options: {
+        useResolveUrlLoader: true,
+      },
     },
-  },
-]
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `src/images`,
+      },
+    },
+    {
+      resolve: 'gatsby-transformer-cloudinary',
+      options: {
+        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+        apiKey: process.env.CLOUDINARY_API_KEY,
+        apiSecret: process.env.CLOUDINARY_API_SECRET,
+        uploadFolder: 'gatsby-cloudinary',
+        },
+    },
+  ]
 }
