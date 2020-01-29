@@ -4,9 +4,11 @@ import '../styles/main.scss'
 // import MENULIST from '../components/menu-list'
 import MenuList from '../components/MenuList'
 import Logo from '../components/Logo'
-import Image from '../components/Image'
-import { graphql, data } from "gatsby"
-import PropTypes from 'prop-types'
+import Image from '../components/image/Image'
+// import { graphql, data } from "gatsby"
+// import PropTypes from 'prop-types'
+
+
 
 
 
@@ -20,6 +22,8 @@ class Gallery extends React.Component {
   //    console.warn(data)
   //   }
 
+
+
   const menuList = ['gallery','aboutme', 'contact'];
 
     return (
@@ -29,7 +33,7 @@ class Gallery extends React.Component {
           <MenuList menuList={menuList} />
         </div>
         <div className="imageContainer">
-          <Image/>
+        <Image />
         </div>
       </div>
       )
