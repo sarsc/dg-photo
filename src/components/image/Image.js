@@ -1,15 +1,19 @@
 import React from 'react'
 
 import ImageCategory from '../ImageCategory'
-import slider from '../image/slider'
+import ImageSlider from '../image/ImageSlider'
 
 class Image extends React.Component {
   render () {
+  // const images = [
+  //   'IMG_4096.jpg', 'IMG_4211.jpg', 'main-bg.jpg'
+  // ]
+
     return (
       <div>
         <ImageCategory />
         <div style={{width: '700px'}}>
-          {slider}
+          <ImageSlider  />
         </div>
       </div>
       )
