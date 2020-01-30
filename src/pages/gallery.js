@@ -1,9 +1,6 @@
 import React from 'react'
 
 import '../styles/main.scss'
-// import MENULIST from '../components/menu-list'
-import MenuList from '../components/MenuList'
-import Logo from '../components/Logo'
 import Image from '../components/image/Image'
 import LeftSideContainer from '../components/LeftSideContainer'
 // import { graphql, data } from "gatsby"
@@ -20,7 +17,6 @@ class Gallery extends React.Component {
   //   }
 
 
-  const menuList = ['gallery','aboutme', 'contact'];
 
     return (
       <div className="mainContainer">
