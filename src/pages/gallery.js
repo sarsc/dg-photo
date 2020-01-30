@@ -8,10 +8,6 @@ import Image from '../components/image/Image'
 // import { graphql, data } from "gatsby"
 // import PropTypes from 'prop-types'
 
-
-
-
-
 class Gallery extends React.Component {
 
 // static propTypes = {
@@ -21,9 +17,6 @@ class Gallery extends React.Component {
   //   const getData = ({ data }) => {
   //    console.warn(data)
   //   }
-
-
-
   const menuList = ['gallery','aboutme', 'contact'];
 
     return (
@@ -32,9 +25,7 @@ class Gallery extends React.Component {
           <Logo />
           <MenuList menuList={menuList} />
         </div>
-        <div className="imageContainer">
         <Image />
-        </div>
       </div>
       )
   }

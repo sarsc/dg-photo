@@ -10,9 +10,9 @@ class Image extends React.Component {
   // ]
 
     return (
-      <div>
+      <div className="imageContainer">
         <ImageCategory />
-        <div style={{width: '700px'}}>
+        <div className="sliderMainContainer">
           <ImageSlider  />
         </div>
       </div>
