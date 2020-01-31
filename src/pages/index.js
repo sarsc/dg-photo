@@ -1,7 +1,7 @@
 import React from "react"
 
 // import NameLogo from '../components/NameLogo'
-import MenuList from '../components/MenuList'
+import MenuList from '../components/Menu/MenuList'
 import '../styles/main.scss'
 import Logo from "../components/Logo"
 

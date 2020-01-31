@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Logo from '../Logo'
-import MenuList from '../MenuList'
+import MenuList from '../Menu/MenuList'
 // import MENULIST from '../components/menu-list'
 // TO DO
 
