@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ImageCategory from '../ImageCategory'
+import ImageCategory from '../ImageCategory/ImageCategory'
 import ImageSlider from '../image/ImageSlider'
 
 class Image extends React.Component {
