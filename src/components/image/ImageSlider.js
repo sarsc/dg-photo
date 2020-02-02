@@ -1,7 +1,9 @@
 import React from 'react'
-
-import AwesomeSlider from 'react-awesome-slider';
-import AwesomeSliderStyles from 'react-awesome-slider/src/styles';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+// import AwesomeSlider from 'react-awesome-slider';
+// import AwesomeSliderStyles from 'react-awesome-slider/src/styles';
 // import 'react-awesome-slider/dist/styles.css';
 import imageTest1 from '../../assets/images/img_1.jpg'
 import imageTest2 from '../../assets/images/img_2.jpg'
@@ -18,22 +20,25 @@ const ImageSlider = () => {
     imageTest4
   ]
 
+const settings = {
+   dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  centerMode: true,
+  variableWidth: true
+    };
+
 const mapImages = imageList.map( (image, index) => (
   <div>
-    <img data-set={`img_${index + 1}`} src={`${image}`} alt="" className="imageSlider"/>
+    <img src={`${image}`} alt="" className="imageSize" />
   </div>)
 )
 
 const slider = (
-  <AwesomeSlider
-    className="sliderContainer"
-    cssModule={AwesomeSliderStyles}
-    bullets={false}
-    infinite
-    buttons
-    >
+  <Slider {...settings}>
     {mapImages}
-  </AwesomeSlider>
+  </Slider>
 )
 
 return slider

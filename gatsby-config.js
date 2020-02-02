@@ -24,7 +24,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `src/images`,
+        path: `src/assets/images`,
       },
     },
     // {
@@ -36,18 +36,18 @@ module.exports = {
     //     uploadFolder: 'gatsby-cloudinary',
     //     },
     // // },
-    // {
-    //   resolve:`gatsby-source-cloudinary`,
-    //   options: {
-    //     cloudName: process.env.CLOUDINARY_CLOUD_NAME,
-    //     apiKey: process.env.CLOUDINARY_API_KEY,
-    //     apiSecret: process.env.CLOUDINARY_API_SECRET,
-    //     resourceType: `image`,
-    //     type: `type Value`,
-    //     maxResults: `Max result`,
-    //     tags:`fetch image tags?`,
-    //     prefix: `abc-xyz/`
-    //     },
-    // },
+    {
+      resolve:`gatsby-source-cloudinary`,
+      options: {
+        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+        apiKey: process.env.CLOUDINARY_API_KEY,
+        apiSecret: process.env.CLOUDINARY_API_SECRET,
+        resourceType: `image`,
+        type: `type Value`,
+        maxResults: `Max result`,
+        tags:`fetch image tags?`,
+        prefix: `abc-xyz/`
+        },
+    },
   ]
 }
