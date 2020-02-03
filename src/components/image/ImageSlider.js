@@ -21,17 +21,18 @@ const ImageSlider = () => {
   ]
 
 const settings = {
-   dots: true,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1,
-  centerMode: true,
-  variableWidth: true
+    arrows: false,
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    variableWidth: true
     };
 
 const mapImages = imageList.map( (image, index) => (
-  <div>
+  <div className="imageContainer">
     <img src={`${image}`} alt="" className="imageSize" />
+    <p className="indexPhoto">{index + 1}</p>
   </div>)
 )
 
