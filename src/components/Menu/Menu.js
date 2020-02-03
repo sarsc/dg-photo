@@ -4,16 +4,14 @@ import { Link } from "gatsby"
 import "./style.scss"
 
 class Menu extends React.Component {
-
   render () {
-
     const { itemName } = this.props
-    const link =  <Link to={`/${itemName}/`} >{itemName}</Link>
+    const link = <Link to={`/${itemName}/`} >{itemName}</Link>
     return (
-        <div className="itemMenu">
-            {link}
-        </div>
-      )
+      <h3 className="itemMenu">
+        {link}
+      </h3>
+    )
   }
 }
 

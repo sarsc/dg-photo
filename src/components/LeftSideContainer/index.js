@@ -8,9 +8,7 @@ import MenuList from '../Menu/MenuList'
 import './style.scss'
 
 const LeftSideContainer = () => {
-
   const menuList = ['gallery','aboutme', 'contact'];
-
   return (
      <div className="leftContainer">
       <div className="logoContainer">

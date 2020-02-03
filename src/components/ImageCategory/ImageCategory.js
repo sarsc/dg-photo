@@ -5,9 +5,9 @@ const ImageCategory = () => {
 //TODO filters
 
   return (<div className="categoryContainer">
-    <div className="">architecture</div>
-    <div className="">design</div>
-    <div className="">art & circus</div>
+    <h2 className="">architecture</h2>
+    <h2 className="">design</h2>
+    <h2 className="">art & circus</h2>
   </div>)
 }
 
