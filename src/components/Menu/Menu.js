@@ -6,7 +6,14 @@ import "./style.scss"
 class Menu extends React.Component {
   render () {
     const { itemName } = this.props
-    const link = <Link to={`/${itemName}/`} >{itemName}</Link>
+
+    const name = {
+      about: 'about me',
+      contact: 'contact',
+      gallery: 'gallery',
+    }[itemName]
+
+    const link = <Link to={`/${itemName}/`} >{name}</Link>
     return (
       <h3 className="itemMenu">
         {link}

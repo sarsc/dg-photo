@@ -10,10 +10,6 @@ class HomePage extends React.Component {
 
  constructor (props) {
   super(props)
-
-  this.state = {
-      menuList: ['gallery','aboutme', 'contact']
-    }
   }
 
  static defaultProps = {
@@ -22,7 +18,6 @@ class HomePage extends React.Component {
 
   render() {
 
-   const { menuList } = this.state
    const { hasMainPageFeature } = this.props
   return (
    <div className="main-container">
