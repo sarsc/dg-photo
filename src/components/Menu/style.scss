@@ -1,9 +1,13 @@
 .itemMenu {
   font-size: 30px;
-  padding: 14px;
-
+  padding: 30px;
+  font-weight: 300;
   a {
     text-decoration: none;
-    color: #000
+    color: #000;
   }
+}
+
+.listContainer {
+  margin-bottom: 140px;
 }
