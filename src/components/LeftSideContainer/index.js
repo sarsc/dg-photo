@@ -7,13 +7,11 @@ import MenuList from '../Menu/MenuList'
 
 import './style.scss'
 
-const LeftSideContainer = () => {
+const LeftSideContainer = ({ isMainPage }) => {
   const menuList = ['gallery','about', 'contact'];
   return (
      <div className="leftContainer">
-      <div className="logoContainer">
-       <Logo />
-      </div>
+       <Logo isMainPage={isMainPage}/>
       <MenuList menuList={menuList} />
     </div>
   )
