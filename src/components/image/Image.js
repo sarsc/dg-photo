@@ -10,7 +10,7 @@ class Image extends React.Component {
   // ]
 
     return (
-      <div className="imagesContainer">
+      <div className="rightContainer">
         <ImageCategory />
         <div className="sliderMainContainer">
           <ImageSlider  />

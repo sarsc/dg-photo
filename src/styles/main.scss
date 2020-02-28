@@ -12,3 +12,12 @@ h2, h3 {
 body {
   font-family: 'Merriweather', sans-serif;
 }
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding-top: 90px;
+}

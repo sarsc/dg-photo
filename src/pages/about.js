@@ -7,7 +7,7 @@ const AboutMe = () => {
   return (
     <div className="mainContainer">
     <LeftSideContainer />
-      <div className="rightContainer">
+      <div className="rightContainer aboutContainer">
        <div className="textContainer">
          <p>
            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
