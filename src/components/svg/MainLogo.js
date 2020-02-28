@@ -1,20 +1,16 @@
 import React from "react";
+import './style.scss'
 
 
-const MainLogo = ({addClass}) => {
-  const style = {
-    position: 'absolute',
-    top: '100px',
-    right: '-475px',
-  }
+const MainLogo = () => {
   return (
     <svg
-         xmlns="http://www.w3.org/2000/svg"
+      xmlns="http://www.w3.org/2000/svg"
       width="692"
       height="122"
       fill="none"
       viewBox="0 0 692 122"
-      className={addClass}
+      className="logoLarge"
     >
       <path
         fill="#E35F00"

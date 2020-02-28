@@ -1,4 +1,6 @@
 import React from "react";
+import './style.scss'
+
 
 function LogoSmall() {
   return (
@@ -8,6 +10,7 @@ function LogoSmall() {
       height="39"
       fill="none"
       viewBox="0 0 217 39"
+      className="logoSmall"
     >
       <path
         fill="#000"
