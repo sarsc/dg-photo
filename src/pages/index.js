@@ -31,7 +31,3 @@ class HomePage extends React.Component {
 
 
 export default HomePage;
- // <Logo isMainPage={hasMainPageFeature} />
-      // <div className="left-c">
-      //   <MenuList menuList={menuList}/>
-      // </div>
