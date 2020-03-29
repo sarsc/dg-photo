@@ -10,6 +10,7 @@ require('dotenv').config({
 
 module.exports = {
   /* Your site config here */
+  pathPrefix: "/dg-photo",
   siteMetadata: {
     title: `dg-photo`,
   },
