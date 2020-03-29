@@ -4,22 +4,28 @@
 }
 
 .sliderMainContainer {
-  // width: 1000px;
   width: 100%;
 }
 
 .imageContainer {
+  min-width: 400px;
   position: relative;
+  width: 100%;
 }
 
 .imageSize {
-  max-height: 400px;
-  margin: 40px;
+  // max-height: 400px;
+  // min-width: 400px;
 }
 
 .indexPhoto {
   position: absolute;
-  bottom: 30px;
-  right: 60px;
+  bottom: 10px;
+  left: 30px;
   color: white;
+}
+
+.slick-slide {
+  margin: 15px;
+  height: auto;
 }

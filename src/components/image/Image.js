@@ -1,19 +1,20 @@
 import React from 'react'
-
+import PropTypes from 'prop-types';
 import ImageCategory from '../ImageCategory/ImageCategory'
 import ImageSlider from '../image/ImageSlider'
 
 class Image extends React.Component {
+
+  static propTypes = {
+    imageList: PropTypes.array.isRequired
+  }
   render () {
-  // const images = [
-  //   'IMG_4096.jpg', 'IMG_4211.jpg', 'main-bg.jpg'
-  // ]
 
     return (
       <div className="rightContainer">
         <ImageCategory />
         <div className="sliderMainContainer">
-          <ImageSlider  />
+          <ImageSlider imageList={this.props.imageList} />
         </div>
       </div>
       )

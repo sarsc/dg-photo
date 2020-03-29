@@ -3,25 +3,15 @@ import React from 'react'
 import '../styles/main.scss'
 import Image from '../components/image/Image'
 import LeftSideContainer from '../components/LeftSideContainer'
-// import { graphql, data } from "gatsby"
-// import PropTypes from 'prop-types'
+import { graphql } from "gatsby"
 
 class Gallery extends React.Component {
 
-// static propTypes = {
-//     data: PropTypes.object.isRequired
-// }
   render() {
-  //   const getData = ({ data }) => {
-  //    console.warn(data)
-  //   }
-
-
-
     return (
       <div className="mainContainer">
         <LeftSideContainer />
-        <Image />
+        <Image imageList={this.props.data.allFile.edges}/>
       </div>
       )
   }
@@ -29,12 +19,23 @@ class Gallery extends React.Component {
 export default Gallery
 
 
-// export const query = graphql`
-//   query GalleryQuery {
-//     site {
-//       siteMetadata {
-//         title
-//       }
-//     }
-//   }
-// `
+export const data = graphql`
+    query ImageQuery {
+      allFile(filter: {name: {regex: "/img/"}}) {
+        edges {
+          node {
+            base
+            childImageSharp {
+              fluid(fit: COVER) {
+                base64
+                sizes
+                src
+                srcSet
+                aspectRatio
+              }
+            }
+          }
+        }
+      }
+    }
+`
