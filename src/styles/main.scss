@@ -18,6 +18,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: calc(100% - 350px);
   padding-top: 90px;
+  padding-left: 100px;
 }

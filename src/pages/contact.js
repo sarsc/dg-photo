@@ -4,7 +4,7 @@ import LeftSideContainer from '../components/LeftSideContainer'
 const Contact = ( ) => {
   return <div className="mainContainer">
     <LeftSideContainer />
-    <div className="rightContainer">
+    <div className="rightContainer textMainContainer">
       <div className="textContainer">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <p>Email</p>
